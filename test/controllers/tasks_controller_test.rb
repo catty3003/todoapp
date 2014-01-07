@@ -12,6 +12,7 @@ class TasksControllerTest < ActionController::TestCase
     assert_response :success
     assert_not_nil assigns(:done)
     assert_not_nil assigns(:todo)
+    sign_in @user
   end
 
   test "should get new" do
