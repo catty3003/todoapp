@@ -26,11 +26,11 @@ class ProjectsController < ApplicationController
 	end
 
 	def update
-  @project = Project.find(params[:id])
-  if !@project.update(project_params)
-    render action: 'error'
-  end
-end
+	  @project = Project.find(params[:id])
+	  if !@project.update(project_params)
+	    render action: 'error'
+	  end
+	end
 
 	private
     def project_params
