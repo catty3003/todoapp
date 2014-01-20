@@ -1,4 +1,5 @@
 class Task < ActiveRecord::Base
+	belongs_to :project
 	belongs_to :user
 	belongs_to :delegated, class_name: "User", foreign_key: "delegated_id"
 	belongs_to :project
